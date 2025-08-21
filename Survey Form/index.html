@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+      <!-- Name Field with Label -->
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" size="20" required /><br /><br />
+
+      <!-- Email Field with Label -->
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" size="20" required /><br /><br />
+
+      <!-- Age Field with Label -->
+      <label for="number" id="number-label">Age (optional)</label>
+      <input type="number" id="number" name="age" placeholder="18" min="12" max="150" /><br /><br />
+
+      <!-- Preferred Platform Dropdown -->
+      <label for="dropdown">Preferred platform</label><br />
+      <select name="platform" id="dropdown">
+        <option value="web">Web</option>
+        <option value="mobile">Mobile</option>
+        <option value="other">Other</option></select
+      ><br /><br />
+
+      <!-- Radio Buttons: Recommendation -->
+      <legend>Would you recommend this platform to others?</legend>
+      <br />
+      <input type="radio" id="definitely" name="recommend" value="definitely" required />
+      <label for="definitely">Definitely</label><br />
+      <input type="radio" id="maybe" name="recommend" value="maybe" required />
+      <label for="maybe">Maybe</label><br />
+      <input type="radio" id="not-sure" name="recommend" value="not-sure" required />
+      <label for="not-sure">Not sure</label><br /><br />
+
+      <!-- Checkboxes for Improvements -->
+      <legend>What would you like to see improved? (Check all that apply)</legend>
+      <input type="checkbox" id="speed" name="improvements" value="speed" />
+      <label for="speed">Speed</label><br />
+      <input type="checkbox" id="features" name="improvements" value="features" />
+      <label for="features">Features</label><br />
+      <input type="checkbox" id="design" name="improvements" value="design" />
+      <label for="design">Design</label><br />
+      <input type="checkbox" id="usability" name="improvements" value="usability" />
+      <label for="usability">Usability</label><br />
+      <input type="checkbox" id="other-improvements" name="improvements" value="other" />
+      <label for="other-improvements">Other</label><br /><br />
+
+      <!-- Comments/Feedback -->
+      <label for="comments">Other Comments?</label><br />
+      <textarea id="comments" name="comments" placeholder="Let us know anything else..." cols="50" rows="5"></textarea><br /><br />
+
+      <!-- Submit Button -->
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
